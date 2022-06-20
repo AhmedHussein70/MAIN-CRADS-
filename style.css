@@ -100,3 +100,12 @@ th,td{
 #deleteAll{
   margin: 20px 0;
 }
+@media screen and (max-width: 700px) {
+  table{
+    font-size: 1.7vw;
+
+  }
+  #delete,#update{
+    font-size:  1.8vw;
+  }
+}
