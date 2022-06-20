@@ -123,6 +123,7 @@ function newProduct() {
       submit.innerHTML = `Create`;
       count.style.display = "block";
       getTotal();
+      mood = "create";
     }
     clearData();
     getTotal()
@@ -147,6 +148,7 @@ function newProduct() {
 
 submit.addEventListener("click", () => {
   newProduct();
+  getTotal()
   displayProduct();
 });
 
@@ -165,7 +167,7 @@ function displayProduct() {
       <td>${item.taxes}</td>
       <td>${item.ads}</td>
       <td>${item.discount}</td>
-      <td>${total.innerHTML}</td>
+      <td>${datapro[index].total}</td>
       <td>${item.category}</td>
       <td><button onclick="UpdatePro(${index})" id="update">update</button></td>
       <td><button onclick="deleteitem(${index})" id="delete">delete</button></td>
