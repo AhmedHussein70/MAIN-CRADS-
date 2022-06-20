@@ -31,7 +31,7 @@ inputs.forEach((input) => {
 
 
 count.addEventListener("keyup",()=>{
-  if (count.value>100) {
+  if (count.value>100 &&count.value !="") {
     count.style.border = "1px solid tomato";
   }else{
     count.style.border = "none";
