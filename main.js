@@ -125,7 +125,7 @@ function newProduct() {
       getTotal();
     }
     clearData();
-    
+    getTotal()
   } else {
     inputs.forEach((input) => {
       if (input.value != "") {
